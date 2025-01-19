@@ -29,6 +29,7 @@ header {
     height: auto;
     display: block;
     object-fit: cover;
+    background-image: url('path/to/S014.jpg'); /* Troca feita aqui */
 }
 
 /* Conteúdo Principal */
@@ -43,6 +44,7 @@ header {
     height: auto;
     display: block;
     margin: 0 auto;
+    background-image: url('path/to/S015.png'); /* Troca feita aqui */
 }
 
 /* Seção dos Botões */

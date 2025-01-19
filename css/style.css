@@ -29,7 +29,6 @@ header {
     height: auto;
     display: block;
     object-fit: cover;
-    background-image: url('path/to/S014.jpg'); /* Troca feita aqui */
 }
 
 /* Conteúdo Principal */
@@ -44,7 +43,6 @@ header {
     height: auto;
     display: block;
     margin: 0 auto;
-    background-image: url('path/to/S015.png'); /* Troca feita aqui */
 }
 
 /* Seção dos Botões */
@@ -83,6 +81,23 @@ header {
     white-space: nowrap;
     box-sizing: border-box;
     display: inline-block;
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+}
+
+.footer-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
 }
 
 /* Versão Mobile */
@@ -188,21 +203,4 @@ header {
 @keyframes fadeInOut {
     0%, 100% { opacity: 0; }
     4.17%, 95.83% { opacity: 1; }
-}
-
-/* Rodapé */
-footer {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    position: relative;
-}
-
-.footer-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    margin: 0;
-    padding: 0;
 }

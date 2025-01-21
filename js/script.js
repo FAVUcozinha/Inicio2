@@ -13,8 +13,8 @@ function nextSlide() {
 // Verifica a largura da tela
 const isMobile = window.innerWidth <= 768;
 
-// Inicia o slideshow com um intervalo menor para mobile (1.5 segundos) e maior para desktop (3 segundos)
-const slideInterval = isMobile ? 1500 : 3000; // Ajustado para 1.5 segundos no mobile
+// Ajuste do intervalo para mobile (750ms) e desktop (1500ms)
+const slideInterval = isMobile ? 750 : 1500; // Mobile mais rápido com 750ms, desktop com 1500ms
 
 // Inicia o slideshow com a transição conforme o intervalo determinado
 setInterval(nextSlide, slideInterval);

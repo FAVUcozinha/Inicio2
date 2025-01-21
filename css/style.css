@@ -114,11 +114,11 @@ header {
 
     /* Ajuste da animação para versão mobile */
     .slideshow {
-        animation: slideAnimation 120s linear infinite; /* Reduzido de 200s para 120s */
+        animation: slideAnimation 200s linear infinite; /* 200 segundos para 500 slides */
     }
 
     .slide {
-        animation: fadeInOut 120s linear infinite; /* Reduzido de 200s para 120s */
+        animation: fadeInOut 0.2s linear infinite; /* Cada slide visível por 0.2s */
     }
 }
 
@@ -194,16 +194,16 @@ header {
 
 .slideshow {
     display: flex;
-    width: 100%;
+    width: 50000%; /* 500 slides */
     height: 100%;
-    animation: slideAnimation 200s linear infinite; /* Animação contínua */
+    animation: slideAnimation 250s linear infinite; /* 250 segundos para todos os slides */
 }
 
 .slide {
     width: 100%;
     flex-shrink: 0;
     opacity: 0;
-    animation: fadeInOut 200s linear infinite;
+    animation: fadeInOut 250s linear infinite;
 }
 
 .slide img {
@@ -216,26 +216,12 @@ header {
 /* Animação para transição dos slides */
 @keyframes slideAnimation {
     0% { transform: translateX(0); }
-    6.67% { transform: translateX(-100%); }
-    13.33% { transform: translateX(-200%); }
-    20% { transform: translateX(-300%); }
-    26.67% { transform: translateX(-400%); }
-    33.33% { transform: translateX(-500%); }
-    40% { transform: translateX(-600%); }
-    46.67% { transform: translateX(-700%); }
-    53.33% { transform: translateX(-800%); }
-    60% { transform: translateX(-900%); }
-    66.67% { transform: translateX(-1000%); }
-    73.33% { transform: translateX(-1100%); }
-    80% { transform: translateX(-1200%); }
-    86.67% { transform: translateX(-1300%); }
-    93.33% { transform: translateX(-1400%); }
-    100% { transform: translateX(0); } /* Retorna para o primeiro slide */
+    100% { transform: translateX(-50000%); } /* Move 500 slides para a esquerda */
 }
 
 @keyframes fadeInOut {
-    0%, 100% { opacity: 0; }
-    4.17%, 95.83% { opacity: 1; }
+    0%, 99.8% { opacity: 0; }
+    0.2%, 99.6% { opacity: 1; } /* Torna cada slide visível em sua posição */
 }
 
 /* Rodapé */
